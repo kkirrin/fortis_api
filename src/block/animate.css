@@ -1,0 +1,47 @@
+@keyframes fadeIn {
+    from {
+      opacity: 0; 
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+
+  @keyframes slideInFromRight {
+    from {
+      transform: translateX(100%); 
+      opacity: 0; 
+    }
+    to {
+      transform: translateX(0); 
+      opacity: 1; 
+    }
+  }
+  
+
+  .spin {
+    animation: fadeIn 2s ease;
+    animation: slideInFromRight 2s ease; 
+
+  }
+
+
+
+
+  .about__animate {
+
+    animation: fromRight 4s ease;
+  }
+
+  
+  @keyframes fromRight {
+    from {
+      transform: translateX(100%) ;
+      opacity: 0; 
+    }
+    to {
+      transform: translateX(0); 
+      opacity: 1; 
+    }
+  }

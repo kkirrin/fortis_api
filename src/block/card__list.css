@@ -1,0 +1,5 @@
+.card__list {
+    border-radius: 4px;
+    background: rgba(246, 246, 246, 0.80);
+    backdrop-filter: blur(5px);
+}

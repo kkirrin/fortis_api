@@ -1,0 +1,137 @@
+/* Импорт шрифтов */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap');
+
+
+/* Импорт кастомных стилей для компонентов */
+@import './block/button.css';
+@import './block/menu-button.css';
+@import './block/menu.css';
+@import './block/swiper.css';
+@import './block/scrool-top.css';
+@import './block/select.css';
+@import './block/animate.css';
+@import './block/car-animate.css';
+@import './block/card__list.css';
+@import './block/popup.css';
+@import './block/form';
+@import './block/tracking.css';
+
+/* Импорт TailWind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Зарегистрируйте пользовательское семейство шрифтов и сообщите браузеру, где его найти. */
+@font-face {
+    font-family: 'Noto Sans';
+    src: url('../src/fonts/NotoSans-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NokiaKokia';
+    src: url('../src/fonts/NokiaKokia\(RYS\ BY\ LYAJKA\).ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        font-family: 'Noto Sans', sans-serif;
+        color: #262626;
+        background: linear-gradient(166deg, #FFF 5.27%, rgba(255, 255, 255, 0.00) 78.75%);
+        font-weight: 400;
+    }
+
+    h2, h3 {
+        font-family: 'NokiaKokia';
+        line-height: 85px;
+    }
+
+    span.counter-items,
+    span.counter-client,
+    span.counter-years {
+        font-family: 'NokiaKokia';
+    }
+}
+
+@layer components {
+    .container {
+        @apply max-w-[1440px]
+    }
+}
+
+/* Директивы классов */
+
+
+
+
+
+/* Прочие классы */
+
+.main_bg {
+    background-image: url('/src/img/bg/bg-fortic.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh; 
+    background-attachment: fixed; 
+    background-size: cover; 
+    height: 80vh;
+    object-fit: cover;
+}
+
+.lock {
+    overflow: hidden;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.important {
+    background-image: url('../src/img/pattern-3.png');
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+@media (max-width: 767px) {
+    .important {
+        background-image: none;
+    }
+}
+
+@media (max-width: 1023px) {
+    .hero-bg img {
+        display: none;
+    }
+}
+
+.header-fix {
+    /* background: rgba(20, 19, 19, 0.8); */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23);
+    padding-bottom: 10px;
+}
+
+.title {
+    line-height: 85px !important;
+}
+
+

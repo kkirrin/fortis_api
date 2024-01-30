@@ -1,0 +1,13 @@
+.select { 
+    background: #424242;
+    border: 1px solid #ccc;
+    border-radius: 5px; 
+    padding: 10px; 
+  }
+  
+option {
+    z-index: -1;
+    background-color: #424242;
+    color: #fff; 
+    opacity: .5;
+  }
