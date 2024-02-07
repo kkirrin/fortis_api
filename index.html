@@ -10,7 +10,16 @@
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/baguetteBox.min.css">
-    <link rel=" stylesheet" href="css/main.css">
+    <link rel=" stylesheet" href="./css/main.css">
+    <script
+        src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+        crossorigin="anonymous">
+    </script>
+
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=a43e93d7-cdbe-46d9-a1eb-6825a62107"
+        type="text/javascript">
+    </script>
 </head>
 
 <body>
@@ -18,122 +27,23 @@
         <h1 class="visually-hidden">Скрытый заголовок</h1>
             <section class="main_bg py-10"> 
                 <header>
-                    <div class="container md:gap-5 md:pt-2">
-                        <div class="flex items-center justify-around">
-                                <!-- Кнопка мобильного меню -->
-                                <div class="btn__menu--mobile bg-red rounded-xl shadow-md shadow-main-black items-center gap-10 md:hidden flex">
-                                    <button class="flex items-center gap-2 pl-10 pr-2 py-1 rounded">
-                                        <svg class="h-3 w-3" viewBox="0 0 64 48">
-                                            <path d="M19,15 L45,15 C70,15 58,-2 49.0177126,7 L19,37"></path>
-                                            <path d="M19,24 L45,24 C61.2371586,24 57,49 41,33 L32,24"></path>
-                                            <path d="M45,33 L19,33 C-8,33 6,-2 22,14 L45,37"></path>
-                                        </svg>
-                                    </button>   
-                                </div>
-
-                                <!-- Мобильное меню -->
-                                <div class="mobile-menu ">
-                                    <div class="container flex md:justify-between justify-evenly md:flex-nowrap flex-wrap text-white">
-                                        <div>
-                                            <p class="pb-4">Каталог</p>
-                                            <ul class="text-gray md:text-base text-xs">
-                                                <li class="pb-8">
-                                                    <a href="">Авто с аукционов Японии</a>
-                                                </li>  
-                                                <li class="pb-8">
-                                                    <a href="">Авто с аукционов Кореи</a>
-                                                </li>  
-                                                <li class="pb-8">
-                                                    <a href="">Популярные авто</a>
-                                                </li>  
-                                                <li class="pb-8">
-                                                    <a href="">Авто в наличии</a>
-                                                </li>  
-                                                <li class="pb-8">
-                                                    <a href="">Сейчас на аукционах</a>
-                                                </li>  
-                                            </ul>
-                                        </div>
-                                        <div>
-                                            <p class="pb-4">Клиентам</p>
-                                            <ul class="text-gray md:text-base text-xs">
-                                                <li class="pb-8">
-                                                    <a href="#">О компании</a>
-                                                </li>  
-                                                <li class="pb-8">
-                                                    <a href="">Отзывы</a>
-                                                </li>  
-                                                <li class="pb-8">
-                                                    <a href="">Доставка</a>
-                                                </li>  
-                                                <li class="pb-8">
-                                                    <a href="">Выполненные заказы</a>
-                                                    </li>  
-                                                <li class="pb-8">
-                                                <a href="#">
-                                                    Скачать договор pdf
-                                                </a>
-                                                </li>  
-                                            </ul>
-                                        </div>
-                                        <div>
-                                            <p class="pb-4">Мы в соц.сетях</p>
-                                            <ul class="flex items-center justify-center gap-4">
-                                                <li class="pb-8 flex items-center gap-4">
-                                                    <img src="./src/img/icons_nav/sap.svg" alt="">
-                                                    <img src="./src/img/icons_nav/tg.svg" alt="">
-                                                    <img src="./src/img/icons_nav/vk.svg" alt="">
-                                                    <img src="./src/img/icons_nav/inst.svg" alt="">
-                                                    <img src="./src/img/icons_nav/youtube.svg" alt="">
-                                                </li>  
-                                            </ul>
-                                        </div>
-                                    
-                                        <div>
-                                            <p class="pb-4">КОНТАКТЫ</p>
-                                            <ul>
-                                                <li class="pb-10 pr-8 flex items-center">
-                                                    <img class="mr-2" src="./src/img/icons_nav/phonw.svg" alt="">
-                                                    <a href="tel:79020607575">+79020607575, +79020605757</a>
-                                                </li>
-                                                <li class="pb-10 pr-8 flex items-center">
-                                                    <img class="mr-2" src="./src/img/icons_nav/email.svg" alt="">
-                                                    <a href="mailto:Avtopotencial-DV@mail.ru">Avtopotencial-DV@mail.ru</a>
-                                                </li>
-                                                <li class="pb-10  pr-8 flex items-center max-w-xs">
-                                                    <img class="mr-2" src="./src/img/icons_nav/geo.svg" alt="">
-                                                    <p>г.  Владивосток, ул. Тухачевского 35 , 2 этаж, т/ц Тухачевский</p>
-                                                </li>
-                                                <li class="pb-10 flex items-center">
-                                                    <img class="mr-2" src="./src/img/icons_nav/clock.svg" alt="">
-                                                    <p>Пн-Пт 9:00-18:00</p>
-                                                </li>
-                                                
-                                                <li class="">
-                                                    <button class="bg-red up py-2 px-10 text-white rounded-lg">
-                                                        Заказать авто
-                                                    </button>
-                                                </li>
-                                            </ul>
-                                        </div>  
-                                    </div>
-                                </div>
-
+                    <div class="container gap-5 md:pt-2">
+                        <div class="flex items-center justify-evenly">
                                 <div>
                                     <a href="index.html">
-                                        <img class="m-auto md:w-24 " src="./src/img/logo.png" alt="Logo">
+                                        <img class="m-auto w-28" src="./src/img/logo.png" alt="Logo">
                                     </a>
                                 </div>
 
                                 <div>
-                                    <ul class="gap-2 hidden md:flex">
+                                    <ul class="gap-5 hidden md:flex justify-center items-center">
                                     
                                         <li class="mr-2"><a class="text-white hover:text-red transition-colors nav-link" href="#"
                                             data-goto=".page-section-1">Услуги</a></li>
                                         <li class="mr-2"><a class="text-white hover:text-red transition-colors nav-link" href="#"
                                             data-goto=".page-section-2">Отследить груз</a></li>
                                         <li class="mr-2"><a class="text-white hover:text-red transition-colors nav-link" href="#">Заказать перевозку</a></li>
-                                        <li class="mr-2 text-white">
+                                        <li class="mr-2 text-white max-w-[200px]">
                                                 <address>
                                                 г. Находка, ул. Портовая,
                                                 д. 3А, офис 204
@@ -156,9 +66,9 @@
                     </div>
                 </header>  
                 <div class="container">
-                    <div class="p-32">
-                        <h3 class="text-yellow uppercase md:text-2xl text-base pb-10">Фортисслог</h3>
-                        <h2 class="uppercase text-white md:text-7xl text-4xl font-semibold pb-10">Ваша сильная логистика!</h2>
+                    <div class="pt-8 p-2 sm:p-10 md:p-32">
+                        <h3 class="text-yellow uppercase text-base sm:text-xl md:text-2xl pb-10">Фортислог</h3>
+                        <h2 class="lowercase text-white text-2xl sm:text-3xl md:text-6xl  font-semibold pb-10">Ваша сильная логистика!</h2>
                         <p class="text-white md:text-xl text-sm pb-10">Осуществляем мультимодальные контейнерные перевозки и оптимальное
                             таможенное оформление в портах Владивостока по всему миру
                         </p>
@@ -276,7 +186,7 @@
             </div>
             <div>
                 <p class="pb-4">КОНТАКТЫ</p>
-                <ul class="md:w-auto w-[150px]">
+                <ul class="md:w-auto w-[220px]">
                     <li class="pb-4 pr-4 flex items-center">
                         <img class="mr-2" src="./src/img/icons/phonw.svg" alt="">
                         <a href="tel:+7914665-38-98">
@@ -306,10 +216,13 @@
             <path d="M7 26C7 26.5523 7.44772 27 8 27C8.55228 27 9 26.5523 9 26H7ZM8.70711 0.292893C8.31658 -0.0976311 7.68342 -0.0976311 7.29289 0.292893L0.928932 6.65685C0.538408 7.04738 0.538408 7.68054 0.928932 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65685L8.70711 0.292893ZM9 26V1H7V26H9Z" fill="#202020"/>
         </svg>
     </div>
+
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/wow.js"></script>
     <script src="js/baguettebox.js"></script>
     <script type="module" src="js/main.js"></script>
+    <script src="./tracking_app.js"></script>
 </body>
 
 </html>
+

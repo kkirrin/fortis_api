@@ -77,15 +77,33 @@
 
 /* Прочие классы */
 
+
+#vagon-no-input {
+    width: 350px;
+    margin-bottom: 5px;
+}
+
+#vagonMap {
+    height: 300px; 
+    width: 100%; 
+  }
+
+/* .wagon-map-wrap {
+    visibility: hidden;
+} */
+  
+
 .main_bg {
-    background-image: url('/src/img/bg/bg-fortic.png');
+    padding-top: 40px;
+    background-image: url('../src/img/bg/bg-fortic.png');
+    top: 10px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh; 
     background-attachment: fixed; 
     background-size: cover; 
-    height: 80vh;
+    height: 84vh;
     object-fit: cover;
 }
 
